@@ -1,0 +1,52 @@
+#body {
+  background-color: #333;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.nav-link {
+  color: #61dafb !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+#root {
+  background-color: #333;
+  height: 100vh;
+}
+
+.sticky-top {
+  background-color: #333;
+}
+
+header,
+main,
+footer {
+  border: 1px dashed #61dafb;
+}
+
+main h1,
+footer h1 {
+  color: #61dafb;
+}
