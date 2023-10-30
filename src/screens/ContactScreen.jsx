@@ -4,9 +4,11 @@ import './css/ContactScreen.css';
 
 export default function ContactScreen() {
   const cards = [];
+  let randomIndex = Math.floor(Math.random() * 100);
 
   for (let i = 0; i < 4; i++) {
-    cards.push(<Card key={i} />);
+    cards.push(<Card key={i} index={randomIndex} />);
+    randomIndex+=randomIndex;
   }
 
   return (
@@ -15,9 +17,14 @@ export default function ContactScreen() {
         <h1 className="pb-3">Contact Screen</h1>
         <Carousel />
       </div>
-      <hr className="text-info" />
-      <div className="container d-flex justify-content-between py-3">
-        {cards}
+      <div className="container">
+        <div className="row">
+          {cards.map((card, index) => (
+            <div key={index} className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mt-5">
+              {card}
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   );

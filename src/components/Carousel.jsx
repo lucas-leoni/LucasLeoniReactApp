@@ -26,22 +26,22 @@ export default function Carousel() {
         ></button>
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item active" data-bs-interval="2000">
-          <img src="https://picsum.photos/id/1/1300/400" alt="random-img" />
+        <div className="carousel-item active" data-bs-interval="3000">
+          <img src="https://picsum.photos/id/400/1300/400" className="img-fluid carousel-img" alt="random-img" />
           <div className="carousel-caption d-none d-md-block text-light">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
-        <div className="carousel-item" data-bs-interval="2000">
-          <img src="https://picsum.photos/id/2/1300/400" alt="random-img" />
+        <div className="carousel-item" data-bs-interval="3000">
+          <img src="https://picsum.photos/id/1000/1300/400" className="img-fluid carousel-img" alt="random-img" />
           <div className="carousel-caption d-none d-md-block text-light">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
-        <div className="carousel-item" data-bs-interval="2000">
-          <img src="https://picsum.photos/id/3/1300/400" alt="random-img" />
+        <div className="carousel-item" data-bs-interval="3000">
+          <img src="https://picsum.photos/id/10/1300/400" className="img-fluid carousel-img" alt="random-img" />
           <div className="carousel-caption d-none d-md-block text-light">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>

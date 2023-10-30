@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <header>
+    <header className='sticky-top'>
       <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
           <NavLink exact to={'/'} className="nav-link" aria-current="page">
             <img src={Logo} alt="React Logo" className="logo" />
           </NavLink>
@@ -30,17 +30,17 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item fs-5">
+                <NavLink to={'/about'} className="nav-link" aria-current="page">
+                  About
+                </NavLink>
+              </li>
+              <li className="nav-item fs-5">
                 <NavLink
                   to={'/contact'}
                   className="nav-link"
                   aria-current="page"
                 >
                   Contact
-                </NavLink>
-              </li>
-              <li className="nav-item fs-5">
-                <NavLink to={'/about'} className="nav-link" aria-current="page">
-                  About
                 </NavLink>
               </li>
             </ul>

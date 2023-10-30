@@ -22,6 +22,11 @@
   height: 5rem;
 }
 
+.footer-logo {
+  width: 3rem;
+  height: 3rem;
+}
+
 .nav-link {
   color: #61dafb !important;
 }
@@ -40,13 +45,11 @@
   background-color: #333;
 }
 
-header,
-main,
-footer {
-  border: 1px dashed #61dafb;
-}
-
 main h1,
 footer h1 {
   color: #61dafb;
+}
+
+.carousel-img {
+  min-height: 12.5rem;
 }
